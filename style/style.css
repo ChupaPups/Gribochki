@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+
+}
+
+:root{
+    --bg: #ffff;
+    --acent: ;
+    --text: ;
+}
+
+dody{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}

@@ -1,16 +1,52 @@
-*{
+* {
     margin: 0;
+    text-decoration: none;
 
 }
 
-:root{
-    --bg: #ffff;
-    --acent: ;
-    --text: ;
+:root {
+    --bg: #f5e9e2;
+    --acent: #ea6464;
+    --textLight: #f4f0ec;
+    --fon: #9a734c;
 }
 
-dody{
+body {
     display: flex;
     flex-direction: column;
     gap: 50px;
+    background-color: var(--bg);
+}
+
+header {
+    color: var(--textLight);
+    background-color: var(--fon);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 75px;
+
+}
+
+header>h1 {
+    padding-left: 3%;
+}
+
+
+.header-links {
+    display: flex;
+    gap: 50px;
+    padding-right: 3%;
+}
+
+.header-links>a {
+    color: var(--textLight);
+    font-size: 20px;
+    opacity: 80%;
+}
+
+.header-links>a:hover {
+    opacity: 100%;
+    transition: 0.5s ease;
 }

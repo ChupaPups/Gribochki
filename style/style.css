@@ -27,10 +27,13 @@ body {
 }
 
 .bannerImg{
-    background-image: url('imgs/amanita.png');
-    min-height: 30vh;
-    min-width: 60vh;
+    background-image: url('./imgs/1.png');
+    min-height: 50vh;
+    min-width: 90vh;
     background-color: brown;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .bannerBtn{

@@ -5,22 +5,69 @@
 }
 
 :root {
-    --bg: #f5e9e2;
-    --acent: #ea6464;
-    --textLight: #f4f0ec;
-    --fon: #9a734c;
+    --bg: rgb(245, 233, 226);
+    --acent: #C43C2E;
+    --textLight: #745C4A;
+    --text: #4A2C1A;
+    --fon: #FFFCF7;
+    --fonmainAdnFooter: #4A2C1A;
 }
 
 body {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    background-color: var(--bg);
+    background-color: rgba(245, 233, 226, 0.5)
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    background-image: url('');
+    min-height: 30vh;
+    min-width: 60vh;
+    background-color: brown;
+}
+
+.bannerBtn{
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 24px;
+    background: none;
+    transition: all 0.3s ease;
+}
+
+.bannerBtn:hover{
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 24px;
+    background: wheat;
+}
+
+.shadow{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:rgba(245, 233, 226, 0.5);
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    pointer-events: auto;
+}
+
+.hidden{
+    display: none;
 }
 
 header {
     color: var(--textLight);
-    background-color: var(--fon);
+    background-color: var(--fonmainAdnFooter);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,22 +78,164 @@ header {
 
 header>h1 {
     padding-left: 3%;
+    color: #ffff;
 }
 
 
-.header-links {
+.headerLinks {
     display: flex;
     gap: 50px;
     padding-right: 3%;
 }
 
-.header-links>a {
-    color: var(--textLight);
+.headerLinks>a {
+    color: #ffff;
     font-size: 20px;
     opacity: 80%;
 }
 
-.header-links>a:hover {
+.headerLinks>a:hover {
     opacity: 100%;
     transition: 0.5s ease;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    min-height: 100vh;
+
+}
+
+.card {
+    width: 410px;
+    height: fit-content;
+    background-color: var(--fon);
+    border-radius: 10px;
+}
+
+.cardText {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cardImg {
+    width: 410px;
+
+}
+
+.cardH1 {
+    font-size: 24px;
+    color: var(--text);
+}
+
+.cardP {
+    font-size: 14px;
+    color: var(--textLight)
+}
+
+.cardPrice {
+    font-size: 27px;
+    color: var(--text);
+}
+
+.cardBtnAndPrice {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: var(--acent);
+    color: #ffff;
+    width: 158px;
+    height: 56px;
+    border-radius: 10px;
+    border: 0;
+}
+
+.sell {
+    z-index: 100000;
+    position: absolute;
+    width: 410px;
+    height: 460px;
+    background-color: var(--textLight);
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    justify-content: center;
+}
+
+.sellInput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px
+}
+
+.sell>h1 {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: #ffff;
+}
+
+.sell>input {
+    width: 400px;
+}
+
+
+.sell>div {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.sell>div>button {
+    background-color: var(--acent);
+    color: #ffff;
+    width: 125px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+}
+
+.aboutUs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.aboutUsCard {
+    background-color: var(--fon);
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%;
+}
+
+
+footer {
+    display: flex;
+    background-color: var(--fonmainAdnFooter);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    text-decoration: underline
+}
+
+.footerLinks {
+    display: flex;
+    gap: 20px;
 }

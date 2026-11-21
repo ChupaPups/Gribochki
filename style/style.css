@@ -30,7 +30,6 @@ body {
     background-image: url('./imgs/1.png');
     min-height: 50vh;
     min-width: 90vh;
-    background-color: brown;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -47,10 +46,10 @@ body {
 
 .bannerBtn:hover{
     border: none;
-    padding: 10px;
-    border-radius: 10px;
+    border-radius: 100%;
     font-size: 60px;
-    background: wheat;
+    background: var(--acent);
+    color: white;
 }
 
 .shadow{

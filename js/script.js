@@ -9,7 +9,6 @@ mod_btn.forEach(element => {
     console.log("1");
     
     element.addEventListener('click', () => {
-        console.log('123123');
 
         modal.classList.remove('hidden')
         shadow.classList.remove('hidden')

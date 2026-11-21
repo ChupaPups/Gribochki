@@ -1,12 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <script src="js/script.js"></script>
-</body>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <h1 class="logo">Грибочки</h1>
+            <div class="headerLinks">
+                <a href="#card">Товары</a>
+                <a href="#aboutUs">О нас</a>
+            </div>
+        </header>
+
+        <banner class="banner">
+            <button class="bannerBtn" id="bwd"><</button>
+            <div id="img">
+                <img src alt="banner-img">
+            </div>
+            <button class="bannerBtn" id="fwd">></button>
+        </banner>
+
+        <!-- <div id="shadow" class="shadow"></div> -->
+        <section class="cards">
+            <div class="card">
+                <img src="Product photo.png" alt class="cardImg">
+                <div class="cardText">
+                    <h1 class="cardH1">Вёшенка обыкновенная</h1>
+                    <p class="cardP">Урожай 1,5 - 2 кг. Просто добавтить
+                        воду</p>
+                    <div class="cardBtnAndPrice">
+                        <h2 class="cardPrice">1490 руб.</h2>
+                        <button class="btn" id="cardbtn">Купить</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card" id="card">
+                <img src="Product photo.png" alt class="cardImg">
+                <div class="cardText">
+                    <h1 class="cardH1">Вёшенка обыкновенная</h1>
+                    <p class="cardP">Урожай 1,5 - 2 кг. Просто добавтить
+                        воду</p>
+                    <div class="cardBtnAndPrice">
+                        <h2 class="cardPrice">1490 руб.</h2>
+                        <button class="btn" id="cardbtn">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Product photo.png" alt class="cardImg">
+                <div class="cardText">
+                    <h1 class="cardH1">Вёшенка обыкновенная</h1>
+                    <p class="cardP">Урожай 1,5 - 2 кг. Просто добавтить
+                        воду</p>
+                    <div class="cardBtnAndPrice">
+                        <h2 class="cardPrice">1490 руб.</h2>
+                        <button class="btn" id="cardbtn">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="sell, hidden">
+                <h1>Введите данные для покупки</h1>
+                <div class="sellInput">
+                    <label for></label>
+                    <input type="text" placeholder="ФИО">
+                    <label for></label>
+                    <input type="text" placeholder="Номер телефона">
+                    <label for></label>
+                    <input type="email" placeholder="email">
+                    <input type="number"
+                        placeholder="номер вашей каточки">
+                </div>
+
+                <div>
+                    <button>Отмена</button>
+                    <button>Купить</button>
+                </div>
+            </div>
+        </section>
+
+         <div class="aboutUs" id="aboutUs">
+            <h2>О нас</h2>
+            <div class="aboutUsCard">
+                <p>Мы уже много лет поставляем домашние грибочки в
+                    самые разные регионы России.
+                    Все наши покупатели довольны результатом, и
+                    присылают нам только восторженные отзывы в
+                    соцсетях.
+                    Мы крайне признательны всем, кто поддерживает
+                    нас.</p>
+                <img src="Product photo.png" alt="гриб">
+            </div>
+        </div>
+
+        <footer>
+            <p>©Грибочки 2026. Все права защищены</p>
+            <div class="footerLinks">
+                <a href="#">Телеграм</a>
+                <a href="#">ВКонтакте</a>
+                <a href="#">Инстаграм</a>
+            </div>
+        </footer>
+
+        <script src="js/script.js"></script>
+    </body>
 </html>

@@ -1,14 +1,17 @@
 // секция модальных окон
 
+let body = document.body
 let modal = document.getElementById("modal")
 let mod_btn = document.getElementById("modal_btn")
 let mod_close_btn = document.getElementById("modal_close")
 
 mod_btn.addEventListener('click', () => {
-    modal.classList.add('hidden')
+    modal.classList.remove('hidden')
+    body.classList.remove('shadow')
 })
 mod_close_btn.addEventListener('click', () => {
-    modal.classList.remove('hidden')
+    modal.classList.add('hidden')
+    body.classList.add('shadow')
 })
 
 // секция переключения фото

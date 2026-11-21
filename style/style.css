@@ -26,8 +26,8 @@ body {
     align-items: center;
 }
 
-.img{
-    background-image: url('');
+.bannerImg{
+    background-image: url('imgs/amanita.png');
     min-height: 30vh;
     min-width: 60vh;
     background-color: brown;
@@ -37,7 +37,7 @@ body {
     border: none;
     padding: 10px;
     border-radius: 10px;
-    font-size: 24px;
+    font-size: 60px;
     background: none;
     transition: all 0.3s ease;
 }
@@ -46,7 +46,7 @@ body {
     border: none;
     padding: 10px;
     border-radius: 10px;
-    font-size: 24px;
+    font-size: 60px;
     background: wheat;
 }
 
@@ -104,8 +104,6 @@ header>h1 {
     display: flex;
     justify-content: center;
     gap: 100px;
-    min-height: 100vh;
-
 }
 
 .card {
@@ -215,8 +213,20 @@ header>h1 {
     border-radius: 10px;
     padding: 20px;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
+.aboutUsP{
+    text-align: center;
+}
+
+.aboutUsImg{
+    height: 15vh;
+    width: 15vh;
+}
 
 footer {
     display: flex;

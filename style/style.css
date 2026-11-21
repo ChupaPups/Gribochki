@@ -27,7 +27,7 @@ body {
 }
 
 .bannerImg{
-    background-image: url('./imgs/1.png');
+    background-image: url('../imgs/1.png');
     min-height: 50vh;
     min-width: 90vh;
     background-size: cover;
@@ -166,7 +166,7 @@ header>h1 {
     flex-direction: column;
     gap: 13px;
     left: 40%;
-    top: 50%;
+    top: 40%;
 }
 
 .sellInput {
@@ -212,7 +212,6 @@ header>h1 {
 }
 
 .aboutUsCard {
-    background-color: var(--fon);
     border-radius: 10px;
     padding: 20px;
     width: 50%;
@@ -232,23 +231,34 @@ header>h1 {
 }
 
 footer {
-    display: flex;
+    color: var(--textLight);
     background-color: var(--fonmainAdnFooter);
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    width: 100%;
+    min-height: 75px;
 }
 
-footer a {
-    text-decoration: none;
-    color: black;
+footer>p {
+    color: #FFF;
+    padding-left: 3%;
 }
 
-footer a:hover {
-    text-decoration: underline
-}
 
 .footerLinks {
     display: flex;
     gap: 20px;
+    padding-right: 3%;
+}
+
+.footerLinks>a {
+    color: #ffff;
+    font-size: 20px;
+    opacity: 80%;
+}
+
+.footerLinks>a:hover {
+    opacity: 100%;
+    transition: 0.5s ease;
 }

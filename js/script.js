@@ -6,13 +6,15 @@ let mod_btn = document.getElementById("cardbtn")
 let mod_close_btn = document.getElementById("modal_close")
 
 mod_btn.addEventListener('click', () => {
+    console.log('123123');
+    
     modal.classList.remove('hidden')
-    shadow.classList.remove('shadow')
+    shadow.classList.remove('hidden')
 })
-// mod_close_btn.addEventListener('click', () => {
-//     modal.classList.add('hidden')
-//     shadow.classList.add('shadow')
-// })
+mod_close_btn.addEventListener('click', () => {
+    modal.classList.add('hidden')
+    shadow.classList.add('hidden')
+})
 
 // секция переключения фото
 

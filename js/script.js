@@ -1,7 +1,7 @@
 // секция модальных окон
 
 let modal = document.getElementById("modal")
-let mod_btn = document.getElementById("modal")
+let mod_btn = document.getElementById("modal_btn")
 let mod_close_btn = document.getElementById("modal_close")
 
 mod_btn.addEventListener('click', () => {

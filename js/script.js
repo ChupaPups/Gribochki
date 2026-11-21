@@ -6,8 +6,6 @@ let mod_btn = document.querySelectorAll(".cardbtn")
 let mod_close_btn = document.getElementById("modal_close")
 
 mod_btn.forEach(element => {
-    console.log("1");
-    
     element.addEventListener('click', () => {
 
         modal.classList.remove('hidden')
